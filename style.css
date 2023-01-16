@@ -22,6 +22,7 @@ body *{
     gap: 32px;
     place-content: center;
     height: 100vh;
+    
 }
 /* player-01 */
 #player-1{
@@ -54,6 +55,7 @@ player-1 .info{
     background-color: rgba(106, 13, 44, 0.408);
     padding: 28px;
     border-radius: 6px;
+    border-radius: 20px;
 }
 .player img{
         width: 84px;
@@ -139,3 +141,15 @@ margin-top: 28px;
     }
     
 }
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  a {
+    color: red;
+     text-decoration: blink blue;
+
+  }
