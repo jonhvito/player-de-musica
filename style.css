@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* #app * {
+/* border: 1px solid red; */
+body{
+    background-color: black;
+}
+body *{
+    font-family: monospace;
+}
+#app{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 
+    'A B'
+    'A C';
+    gap: 32px;
+    place-content: center;
+    height: 100vh;
+}
+/* player-01 */
+#player-1{
+    grid-area: A;
+    padding: 50px 38px;
+    /* width: fit-content; */
+}
+#player-1 .wrapper{
+    width: 190px;
+}
+#player-1 img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+player-1 .info{
+    margin-top: 28px;
+}
+/* player-2 */
+#player-2{
+    grid-area: B;
+    height: fit-content;
+}
+/* player-3 */
+#player-3{
+    grid-area: C;
+}
+.player{
+    background-color: rgba(106, 13, 44, 0.408);
+    padding: 28px;
+    border-radius: 6px;
+}
+.player img{
+        width: 84px;
+        height: 84px;
+        object-fit: cover;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    .infowrapper{
+        display: flex;
+        gap: 28px;
+        align-items: center;
+    }
+
+.info{
+    color: white;
+}
+.info h1{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 9.6px;
+}
+.info p{
+opacity: 0.99;
+font-size: 20px;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.horizontal .controls{
+    padding-inline: 58px ;
+}
+.track{
+position: relative;
+margin-top: 28px;
+
+}
+.track::before{
+    content: '';
+    height: 6px;
+    width: 100%;
+    display: block;
+    background: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px;  
+   position: absolute;
+}
+.track::after{
+    content: '';
+    height: 6px;
+    width: 80%;
+    display: block;
+    background: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px; 
+}
+.time{
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 9.6px;
+
+}
+@media (max-width: 670px) {
+    #app {
+        display: flex;
+        flex-direction: column;
+        max-width: 270px;
+
+        margin: auto;
+        height: auto;
+        padding-block: 60px;
+    }
+
+    .horizontal .controls{
+        padding-inline: 30px;
+    }
+    
+}
